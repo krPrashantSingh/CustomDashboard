@@ -5,8 +5,8 @@ import { Terminal, Trophy, Gamepad2, Skull, Zap, ChevronRight, LogOut, Activity,
 // --- SUPABASE INITIALIZATION ---
 // In a real Vite app, these would come from import.meta.env
 // For this preview, you will need to replace these strings with your actual Supabase project keys
-const SUPABASE_URL = typeof process !== 'undefined' && process.env?.VITE_SUPABASE_URL ? process.env.VITE_SUPABASE_URL : 'YOUR_SUPABASE_URL';
-const SUPABASE_ANON_KEY = typeof process !== 'undefined' && process.env?.VITE_SUPABASE_ANON_KEY ? process.env.VITE_SUPABASE_ANON_KEY : 'YOUR_SUPABASE_ANON_KEY';
+const SUPABASE_URL = typeof process !== 'undefined' && process.env?.VITE_SUPABASE_URL ? process.env.VITE_SUPABASE_URL : 'https://tvmcijxurcmsrwjqtupu.supabase.co';
+const SUPABASE_ANON_KEY = typeof process !== 'undefined' && process.env?.VITE_SUPABASE_ANON_KEY ? process.env.VITE_SUPABASE_ANON_KEY : 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR2bWNpanh1cmNtc3J3anF0dXB1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEzMzYwNDksImV4cCI6MjA5NjkxMjA0OX0.38aHoxMhBExtXgg8CYAGSTpBX9BVj3PQx26FCW64RuE';
 
 let supabase = null;
 const isSupabaseConfigured = SUPABASE_URL !== 'https://tvmcijxurcmsrwjqtupu.supabase.co' && SUPABASE_ANON_KEY !== 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR2bWNpanh1cmNtc3J3anF0dXB1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEzMzYwNDksImV4cCI6MjA5NjkxMjA0OX0.38aHoxMhBExtXgg8CYAGSTpBX9BVj3PQx26FCW64RuE';
