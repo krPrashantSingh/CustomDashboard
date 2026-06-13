@@ -9,7 +9,7 @@ const SUPABASE_URL = typeof process !== 'undefined' && process.env?.VITE_SUPABAS
 const SUPABASE_ANON_KEY = typeof process !== 'undefined' && process.env?.VITE_SUPABASE_ANON_KEY ? process.env.VITE_SUPABASE_ANON_KEY : 'YOUR_SUPABASE_ANON_KEY';
 
 let supabase = null;
-const isSupabaseConfigured = SUPABASE_URL !== 'YOUR_SUPABASE_URL' && SUPABASE_ANON_KEY !== 'YOUR_SUPABASE_ANON_KEY';
+const isSupabaseConfigured = SUPABASE_URL !== 'https://tvmcijxurcmsrwjqtupu.supabase.co' && SUPABASE_ANON_KEY !== 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR2bWNpanh1cmNtc3J3anF0dXB1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEzMzYwNDksImV4cCI6MjA5NjkxMjA0OX0.38aHoxMhBExtXgg8CYAGSTpBX9BVj3PQx26FCW64RuE';
 
 if (isSupabaseConfigured) {
   supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
