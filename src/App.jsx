@@ -13,8 +13,8 @@ try {
     }
 } catch (e) {}
 
-const SUPABASE_URL = envUrl;
-const SUPABASE_ANON_KEY = envKey;
+const SUPABASE_URL = 'https://tvmcijxurcmsrwjqtupu.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR2bWNpanh1cmNtc3J3anF0dXB1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEzMzYwNDksImV4cCI6MjA5NjkxMjA0OX0.38aHoxMhBExtXgg8CYAGSTpBX9BVj3PQx26FCW64RuE';
 
 let supabase = null;
 const isSupabaseConfigured = SUPABASE_URL.startsWith('http') && SUPABASE_ANON_KEY.length > 20;
